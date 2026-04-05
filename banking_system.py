@@ -16,7 +16,7 @@ class Account:
             self.balance -= amount
             print(f"Withdrew ₹{amount} from account {self.account_number}")
         else:
-            print("Invalid or insufficient balance for withdrawal.")
+            print("Invalid or insufficient balance for withdrawal or try again.")
 
     def display_info(self):
         print(f"Account Number: {self.account_number}, Name: {self.name}, Balance: ₹{self.balance}")
@@ -63,6 +63,7 @@ if __name__ == "__main__":
         print("3. Withdraw")
         print("4. Display Account Info")
         print("5. Exit")
+        print("---------------------------")
 
         choice = input("Enter your choice: ")
 
